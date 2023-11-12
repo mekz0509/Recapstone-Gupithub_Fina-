@@ -1,0 +1,88 @@
+body {
+    font-family: 'Titillium Web', sans-serif;
+    .wt-easein{
+        -webkit-transition: all 500ms ease-in;
+        -moz-transition: all 500ms ease-in;
+        -ms-transition: all 500ms ease-in;
+        -o-transition: all 500ms ease-in;
+        transition: all 500ms ease-in;
+    }
+    
+}
+
+
+
+
+.navbar-brand img {
+    max-height: 50px;
+}
+
+/* Styles for the navigation button */
+.navbar-btn {
+    background-color: red;
+    border: none;
+    margin-right: 10px; 
+}
+
+/* Default styles for the theme toggle button */
+.theme-toggle {
+    background-color: #f8f9fa;
+    border: none;
+    cursor: pointer;
+    padding: 1px 3px; 
+}
+
+/* Styles for elements in dark mode */
+.dark-mode {
+    background-color: #000000; 
+    color: #ffffff; 
+}
+.dark-mode .navbar {
+    background-color: #000000; 
+}
+.dark-mode .nav-link {
+    color: #ffffff; 
+    font-weight: bold;
+}
+.dark-mode .theme-toggle {
+    background-color: #f8f9fa; 
+    color: #000000; 
+}
+
+/* Styles for elements in light mode */
+.light-mode {
+    background-color: #f8f9fa;
+    color: #000000;
+}
+.light-mode .navbar {
+    background-color: #f8f9fa;
+}
+.light-mode .nav-link {
+    color: #000000; 
+    font-weight: bold;
+}
+.light-mode .theme-toggle {
+    background-color: #000000; 
+    color: #ffffff; 
+}
+
+
+
+
+
+.cart-btn {
+    position: relative;
+    cursor: pointer;
+    font-size: 20px;
+    color: #f7971d;
+  }
+  .cart-items {
+    position: absolute;
+    top: -9px;
+    right: -9px;
+    background: #ff0303;
+    padding: 0 4px;
+    border-radius: 34%;
+    color: #ffffff;
+    font-size: 15px
+  }
