@@ -75,21 +75,3 @@ const themeToggleButton = document.querySelector('.theme-toggle');
         themeToggleButton.textContent = 'Dark Mode';
       }
     });
-
-
-
-
-//hero Photo Transition
-    document.addEventListener('DOMContentLoaded', function() {
-            const bookNowButton = document.querySelector('.btn-red');
-            const hoverImage = document.querySelector('.hover-img');
-
-            bookNowButton.addEventListener('mouseenter', function() {
-                hoverImage.style.opacity = '1';
-            });
-
-            bookNowButton.addEventListener('mouseleave', function() {
-                hoverImage.style.opacity = '0';
-            });
-        });
-

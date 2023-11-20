@@ -46,7 +46,9 @@
               <th>Email</th>
             </tr>
           </thead>
+
           <tbody>
+
             <?php
             include "actions/includes/dbconnect.php";
             $query = "SELECT id,firstname, lastname, email FROM users ORDER BY id";
@@ -65,7 +67,13 @@
                 ";
               }
             }
+            
+            $conn->close();
+
             ?>
+
+
+
           </tbody>
         </table>
       </div>
@@ -86,7 +94,34 @@
             </tr>
           </thead>
           <tbody>
-            <!-- Booking data -->
+          <?php     
+              include "actions/includes/dbconnect.php";
+                          // Add this code before trying to use the results
+              $query = "SELECT * FROM booking ORDER BY id";
+              $results = $conn->query($query);
+          
+
+              // Check if any rows were returned
+              if ($results->num_rows > 0) {
+                  $rows = $results->fetch_all(MYSQLI_ASSOC);
+                  for ($x = 0; $x <= count($rows) - 1; $x++) {
+                      echo "<tr>
+                              <td>" . $rows[$x]["id"] . "</td>
+                              <td>" . $rows[$x]["user"] . "</td>
+                              <td>" . $rows[$x]["date"] . "</td>
+                              <td>" . $rows[$x]["time"] . "</td>
+                              <td>" . $rows[$x]["service"] . "</td>
+                              <td>" . $rows[$x]["barber"] . "</td>
+                            </tr>";
+                  }
+              } else {
+                  echo "No bookings found.";
+              }
+
+
+              $conn->close();
+            ?>
+
           </tbody>
         </table>
       </div>

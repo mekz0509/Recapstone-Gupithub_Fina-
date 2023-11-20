@@ -98,8 +98,8 @@ if($isLoggedIn==true) { ?>
                 <li class="nav-item d-flex align-items-center ms-3">
                 <li class="nav-item d-flex align-items-center ms-3">
                     <button class="theme-toggle btn-sm">
-                     <i class="fas fa-moon"></i> <!-- Moon icon for Dark Mode -->
-                    <i class="fas fa-sun" style="display: none;"></i> <!-- Sun icon for Light Mode -->
+                     <i class="fas fa-sun"></i> <!-- Moon icon for Dark Mode -->
+                    <i class="fas fa-moon" style="display: none;"></i> <!-- Sun icon for Light Mode -->
                      </button>
                 </li>
        

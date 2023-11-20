@@ -15,9 +15,9 @@ const themeToggleButton = document.querySelector('.theme-toggle');
       
       // Update button text based on the current theme
       if (body.classList.contains('dark-mode')) {
-        themeToggleButton.textContent = 'Light Mode';
+        themeToggleButton.innerHTML = '<i class="fas fa-sun"></i>'; 
       } else {
-        themeToggleButton.textContent = 'Dark Mode';
+        themeToggleButton.innerHTML = '<i class="fas fa-moon"></i>'; 
       }
     });
 
@@ -25,7 +25,7 @@ const themeToggleButton = document.querySelector('.theme-toggle');
 
 
 //hero Photo Transition
-    document.addEventListener('DOMContentLoaded', function() {
+    document.addEventListener('DOMContentLoaded', function() {    // ensure that the HTML document has fully loaded
             const bookNowButton = document.querySelector('.btn-red');
             const hoverImage = document.querySelector('.hover-img');
 
